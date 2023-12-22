@@ -1,0 +1,16 @@
+<h1 style="text-align: center">Information about our users</h1>
+<div class="main-container">
+  <div class="user-list">
+    <h2>Choose Users</h2>
+    <ng-container *ngFor="let user of users">
+  <button [class.active]="user.id==activeId" class="user-button" (click)="repos(user.repos_url,user.id)">{{user.login}}</button>
+</ng-container>
+  </div>
+  <div class="user-repos">
+    <h2>Users Repositories</h2>
+    <ng-container *ngFor="let repo of repositories" >
+  <p>{{repo.full_name}}</p>
+  <p>{{repo.node_id}}</p>
+</ng-container>
+  </div>
+</div>

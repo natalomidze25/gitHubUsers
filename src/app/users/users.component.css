@@ -1,0 +1,38 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50rem;
+  margin: auto;
+}
+.user-list,.user-repos{
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 80vh;
+  overflow: auto;
+}
+.user-list{
+  background-color: #e0e0e0;
+}
+.user-repos{
+  background-color: #f0f0f0;
+
+}
+.user-button{
+  cursor: pointer;
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.user-button:hover{
+  color: white;
+  background-color: black;
+}
+.active{
+  background-color: grey;
+}
